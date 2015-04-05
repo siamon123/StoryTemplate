@@ -1,0 +1,388 @@
+/* CSS Document */
+/*
+Theme Name: Story.
+Description: Responsive & HTML5 Theme.
+Version: 1.0.
+Author: Siamon Hasan
+Website: http://siamonh.com/
+*/
+
+/*==== Older Browser ===*/
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body{
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #4d4d4d;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  background: white;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}a,a:hover {
+ text-decoration: none;
+}
+/*==== Header ===*/
+#header{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  padding: 10px 10px 0;
+  z-index: 99;
+}#mobile-menu{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #000;
+  padding: 10px 0
+}#mobile-menu span {
+   display: block;
+    width: 20px;
+    height: 2px;
+    background: white;
+    margin: 5px auto;
+}#menu-wrap{
+  position: fixed;
+  top: 60px;
+  left: 10px;
+  width: 200px;
+  padding: 20px;
+  z-index: 999;
+  background: #000;
+  display: none;
+} #menu-wrap ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}#menu-wrap ul li.active{
+  border-bottom: 1px solid #2eb267
+}#menu-wrap ul li a{
+   line-height: 30px;
+   padding: 5px;
+   font-size: 12px;
+   color:#777;
+   text-transform: uppercase;
+   display: block;
+} #menu-wrap ul li a:hover{
+  color: white;
+  text-decoration: none;
+}
+/*==== Sections ===*/
+.section-title{
+  padding-top: 140px;
+  text-align: center;
+  text-transform: uppercase;
+}.section-title h1 {
+  font-weight: 700;
+  font-size: 2em;
+  letter-spacing: 0.2em;
+}.section-title h5{
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-weight: 400;
+}.space{
+  height: 120px;
+  width: 100%;
+  display: block
+}.even{
+  padding: 120px 40px;
+}
+
+/*==== Intro ===*/
+#intro{
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: url(https://farm9.staticflickr.com/8336/8115935187_be92b3f13b_o.jpg) center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center top;
+}#intro-text{
+  padding: 20% 0 0;
+  text-align: center;
+}.logo{
+  margin: 15px 0;
+  }.logo .circle {
+  background-color: #3CB371;
+  color: #FFF;
+}.logo i{
+  -webkit-animation: spin 6s infinite linear;
+   animation: spin 6s infinite linear;
+}@-webkit-keyframes spin{
+      from {
+          -webkit-transform: rotate(0deg);
+      }
+      to {
+          -webkit-transform: rotate(-360deg);
+      }
+}@keyframes spin{
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+        to {
+            -webkit-transform: rotate(-360deg);
+        }
+  }
+#intro-text h1,#intro-text h2{
+  color: white;
+  font-weight: normal;
+  text-transform: uppercase;
+}#intro-text h1{
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 96px;
+  margin-bottom: 30px;
+  display: inline-block;
+}#intro-text h2 span{
+  color: #fff;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 27px;
+  padding: 15px;
+  border: solid 4px #fff;
+}
+
+/*==== About Me ===*/
+#about h4{
+  text-align: center;
+  padding: 1em;
+  font-weight: 400;
+  letter-spacing: 1.5px
+}.myImage{
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: .8;
+  background: #000;
+  height: auto;
+}.myImage img{
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+ -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}.myImage img:hover {
+  opacity: 0.5;
+  -webkit-filter: grayscale(0);
+  filter: none;
+  -webkit-transform: scale3d(1.1,1.1,1);
+   transform: scale3d(1.1,1.1,1);
+}
+/*==== Skills ===*/
+#skills h5{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.skill-bar{
+  width: 100%;
+  display: block;
+  background: #f7f7f7;
+  overflow: hidden;
+  margin-bottom: 5px;
+  -webkit-border-radius: 4px;
+   border-radius: 4px;
+}.skill-progress{
+ display: block;
+ background: #2eb267;
+ height: 25px;
+ -webkit-transition: width .6s ease;
+  transition: width .6s ease;
+}.html{
+  width: 85%;
+}.css3{
+  width: 85%;
+}.php{
+  width: 70%;
+}.sql{
+  width: 45%;
+}
+/*==== Resume ===*/
+#resume{
+  background: #f9f9f9;
+}#resume h3{
+  text-align: center;
+  padding: 40px;
+  margin: 0;
+}#resume h3 strong{
+  padding-bottom: 6px;
+  border-bottom: 3px solid #2eb267;
+  text-transform: uppercase;
+}#resume p{
+  color: #7a7a7a;
+  letter-spacing: 1.1px;
+  font-size: 12px;
+}#timeline-odd{
+  border-right: 1px solid #2eb267
+}.timeline{
+  list-style: none;
+  padding: 0 0 25px;
+  margin: 0;
+  background: white;
+  text-align: center;
+}.timeline-event {
+  position: relative;
+  margin-bottom: 12px;
+}.timeline-event-holder{
+  padding: 32px  25px 10px;
+  position: relative;
+}#resume time{
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 8px 15px;
+  margin-bottom: 12px;
+  background: #2eb267;
+}#resume h4{
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+}#resume p, #about p{
+  line-height: 21px;
+  letter-spacing: 2.5px;
+  font-size: 12px;
+  margin-top: 5px;
+}
+/*==== Portfolio ===*/
+.portfolio-item{
+  padding: 0;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}.portfolio-item img{
+  width: 100%;
+  max-height: 400px;
+  display:block;
+}.portfolio-item-info{
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  opacity: 1;
+  background: rgba(0,0,0,0.7);
+ -webkit-transition: all 300ms ease;
+ transition: all 300ms ease;
+}.portfolio-item:hover .portfolio-item-info{
+  left: 0;
+}.view-portfolio-item .circle {
+  color: #ffffff;
+  position: absolute;
+  left: 50%;
+  top:  50%;
+  margin: -50px 0 0 -50px;
+  background: #3CB371;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  }.portfolio-item:hover .circle {
+    top: 50%;
+   -webkit-transform: scale(1);
+    transform: scale(1);
+  }.view-portfolio-item .cirlce:hover {
+    background: #FFF;
+    border: 2px solid #FFF;
+    color: #000;
+  }
+
+  /*==== Services ===*/
+  .services-box-one{
+    background-color: #0F2B37;
+  }.services-box-two{
+    background-color: #00B686;
+  }.services-box-three{
+    background-color: #E74C3C;
+  }.service-item {
+    padding: 35px 25px;
+    color: white;
+    text-align: center;
+    letter-spacing: 1.5px
+  }.service-item .circle {
+    margin-bottom:  20px;
+    border-color:#fff;
+  }.service-item:hover .circle i{
+    color: #fff;
+  }.service-item h4{
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }.service-item p {
+    font-size: 12px;
+ }
+ /*==== Circle ===*/
+
+ .circle{
+   font-size: 50px;
+   text-align: center;
+   width: 120px;
+   height: 120px;
+   line-height: 120px;
+   display: inline-block;
+   border: 2px solid #3CB371;
+   border-radius: 50%;
+   -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+ }.service-item:hover .circle,.contact-info:hover .circle{
+  color:#3CB371;
+  -webkit-transform: rotate(360deg) translate(0px);
+  transform: rotate(360deg) translate(0px);
+ }
+/*==== Contact ===*/
+#contact {
+  background: #000;
+}#contact .section-title h1{
+  color: white;
+}.contact-info .circle{
+  color: white;
+  border-color: #fff;
+}.contact-info-text{
+  color: white;
+  text-align: center;
+}.email-btn:hover .circle {
+  border-color: #3CB371;
+  color: white;
+}
+/*==== Footer ===*/
+#footer{
+  padding: 2em 0;
+  background: black;
+}#footer .social {
+  text-align: right;
+  font-size: 25px;
+  padding: 0 15px;
+}.social a{
+  color: #4d4d4d;
+}#footer a:hover{
+  color: #3CB371
+}
+
+@media only screen and (max-width:640px) {
+.section-title{
+  padding-top: 40px;
+ }.space{
+   height: 40px;
+ }#timeline-odd {
+   border-right: none;
+ }.contact-info span{
+   margin-bottom: 15px;
+ }.contact-info h1{
+   font-size: 25px;
+ }#footer,#footer .social{
+   text-align: center;
+ }#footer .social{
+   padding: 15px;
+ }
+
+}
